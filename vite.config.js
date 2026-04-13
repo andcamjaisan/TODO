@@ -9,7 +9,7 @@ export default defineConfig(({ mode }) => {
       port: 3001,
     },
     define: {
-      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL || 'http://localhost:5000/api/tareas'),
+      'import.meta.env.VITE_API_URL': JSON.stringify(env.VITE_API_URL || 'https://todo-server-production-260f.up.railway.app/api/tareas'),
     },
   };
 });
