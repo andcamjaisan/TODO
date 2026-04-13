@@ -1,14 +1,19 @@
 {
-  "name": "todo-project",
+  "name": "todo-client",
   "version": "1.0.0",
-  "description": "Stack MERN - React + Express + MySQL",
+  "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "server": "cd server && npm run dev",
-    "client": "cd client && npm run dev",
-    "install:all": "npm install && cd server && npm install && cd ../client && npm install"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
   "devDependencies": {
-    "concurrently": "^8.2.2"
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.12"
   }
 }
