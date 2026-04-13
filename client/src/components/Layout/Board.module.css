@@ -1,0 +1,33 @@
+.board {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .board {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 16rem;
+}
+
+.errorContent {
+  text-align: center;
+}
+
+.errorTitle {
+  color: var(--color-danger);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.errorText {
+  color: var(--color-text-secondary);
+  font-size: 0.875rem;
+}
